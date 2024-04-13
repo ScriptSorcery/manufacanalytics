@@ -113,8 +113,13 @@ export default function WineStatistics() {
   const statisticsTable = useMantineReactTable({
     columns: statisticsColumns,
     data: statisticsData,
-    enableColumnOrdering: true,
+    enableHiding: false,
+    enableColumnFilters: false,
+    enableDensityToggle: false,
     enableGlobalFilter: false,
+    enableFullScreenToggle: false,
+    enableColumnActions: false,
+    enableSorting: false
   });
 
   // Return the table component
